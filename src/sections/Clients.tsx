@@ -5,18 +5,21 @@ const clients = [
   {
     name: 'Taj Engineers Pvt. Ltd.',
     sector: 'Precision Engineering',
+    logo: '/taj.jpg',
     note:
       'Running all eight verticals — from production planning to layered audits — on a single Dopomac deployment.',
   },
   {
     name: 'Shree Stampings Pvt. Ltd.',
     sector: 'Sheet Metal & Stamping',
+    logo: '/shree.jpg',
     note:
       'Digitised press-shop quality, tool-life tracking and 4M change control across multiple lines.',
   },
   {
-    name: 'Ambika Cable Machine Pvt. Ltd.',
+    name: 'Shree Ambika Cable Machine Pvt. Ltd.',
     sector: 'Cable Machinery Manufacturer',
+    logo: '/sacm.jpg',
     note:
       'NPD lifecycle, APQP/PPAP document control and inventory unified for OEM-grade traceability.',
   },
@@ -49,11 +52,14 @@ export default function Clients() {
               className="group relative overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-white/[0.04] to-white/[0.01] p-6 transition hover:border-cyan-300/30"
             >
               <div className="pointer-events-none absolute -right-16 -top-16 h-40 w-40 rounded-full bg-cyan-400/5 blur-3xl" />
-              <Quote
-                size={28}
-                className="text-cyan-300/60"
-                strokeWidth={2}
-              />
+              <div className="flex items-center gap-4">
+                <img
+                  src={c.logo}
+                  alt={c.name}
+                  className="h-12 w-12 rounded-xl object-cover ring-1 ring-white/10"
+                />
+                <Quote size={24} className="text-cyan-300/60" strokeWidth={2} />
+              </div>
               <h3 className="mt-5 font-display text-xl font-semibold text-white">
                 {c.name}
               </h3>

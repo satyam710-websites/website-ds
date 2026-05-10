@@ -73,7 +73,7 @@ export default function Hero() {
             <span className="hidden sm:block h-px w-10 bg-white/15" />
             <span>Taj Engineers</span>
             <span>Shree Stampings</span>
-            <span>Ambika Cable Machine</span>
+            <span>Shree Ambika Cable Machine</span>
           </motion.div>
         </div>
 
