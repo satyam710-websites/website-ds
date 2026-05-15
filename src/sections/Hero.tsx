@@ -66,8 +66,22 @@ export default function Hero() {
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.35 }}
+            className="mt-8 flex items-center gap-3"
+          >
+            <span className="text-[11px] uppercase tracking-[0.22em] text-white/35">Backed by</span>
+            <img
+              src="/Microsoft Badge.png"
+              alt="Microsoft for Founders"
+              className="h-16 w-auto object-contain opacity-90"
+            />
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="mt-10 flex flex-wrap items-center gap-x-8 gap-y-3 text-xs uppercase tracking-[0.22em] text-white/40"
+            className="mt-6 flex flex-wrap items-center gap-x-8 gap-y-3 text-xs uppercase tracking-[0.22em] text-white/40"
           >
             <span>Trusted by manufacturers</span>
             <span className="hidden sm:block h-px w-10 bg-white/15" />
